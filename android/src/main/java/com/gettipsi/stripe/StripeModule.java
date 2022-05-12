@@ -456,13 +456,13 @@ public class StripeModule extends ReactContextBaseJavaModule {
               getDescription(mErrorCodes, "activityUnavailable")
             );
           } else {
-            mCreateSourcePromise = promise;
-            mCreatedSource = source;
-            String redirectUrl = source.getRedirect().getUrl();
-            Intent browserIntent = new Intent(currentActivity, OpenBrowserActivity.class)
-                .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP)
-                .putExtra(OpenBrowserActivity.EXTRA_URL, redirectUrl);
-            currentActivity.startActivity(browserIntent);
+//             mCreateSourcePromise = promise;
+//             mCreatedSource = source;
+//             String redirectUrl = source.getRedirect().getUrl();
+//             Intent browserIntent = new Intent(currentActivity, OpenBrowserActivity.class)
+//                 .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP)
+//                 .putExtra(OpenBrowserActivity.EXTRA_URL, redirectUrl);
+//             currentActivity.startActivity(browserIntent);
           }
         } else {
           promise.resolve(convertSourceToWritableMap(source));
