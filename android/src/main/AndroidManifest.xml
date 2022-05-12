@@ -9,11 +9,7 @@
             android:name="com.google.android.gms.wallet.api.enabled"
             android:value="true" />
 
-        <activity
-            android:name="com.gettipsi.stripe.OpenBrowserActivity"
-            android:exported="false"
-            android:launchMode="singleTask"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        
         <activity
             android:exported="true"
             android:launchMode="singleTask"
