@@ -14,7 +14,7 @@ RaisedButton(
       currency: 'eur',
       returnURL: 'example://stripe-redirect',
     )).then((source) {
-      _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text('Received ${source.sourceId}')));
+      _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text('Received ${source.sourceId}'))); 
       setState(() {
         _source = source;
       });
